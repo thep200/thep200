@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thep200 | CV</title>
+    <link rel="stylesheet" href="style-0.css">
+    <script src="js.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body data-spy="scroll" data-target=".nav-custom" data-offset="50">
+    <div class="loading">
+        <div class="loading__load"></div>
+    </div>
+
+    <div class="container-fluid container-fluid--custom px-0">
+        <div class="contents row no-gutters">
+            <nav id="nav" class="nav-custom navbar navbar-expand-lg">
+                <!-- logo -->
+                <ion-icon class="nav-custom__brand navbar-brand" name="logo-flickr"></ion-icon>
+
+                <!-- btn collapse -->
+                <button id="btn-option" type="button" class="nav-custom__btn navbar-toggler" data-toggle="collapse" data-target="#navbar-content">
+                    <ion-icon class="nav-custom__btn-icon" name="grid-outline"></ion-icon>
+                </button>
+
+                <!-- navbar -->
+                <div id="navbar-content" class="nav-custom__option collapse navbar-collapse">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a href="#home" class="nav-link">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#aboutme" class="nav-link">AboutMe</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#Skill" class="nav-link">Skill</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#exp" class="nav-link">Experience</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#contact" class="nav-link">Contact</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#other" class="nav-link">Other</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <script>
+                    var link_event = document.getElementsByClassName("nav-link");
+                    for (let i = 0; i < link_event.length; i++) {
+                        link_event[i].addEventListener('click', function() {
+                            if (window.innerWidth < 992) {
+                                document.getElementById('btn-option').click();
+                            }
+                        });
+                    }
+
+                    document.getElementById('btn-option').onclick = function() {
+                        if (window.pageYOffset == 0) {
+                            document.getElementById("nav").style.backgroundColor = "rgb(63, 62, 62)";
+                        }
+                    };
+                </script>
+            </nav>
+
+            <!-- content left side -->
+            <div class="contents__left col-lg-5">
+                <img class="contents__left-img"  id="avatar" src="images/Fatima.JPG" alt="image">
+                <div class="contents__left-filter"></div>
+            </div>
+
+            <!-- content right side -->
+            <div class="contents__right col-lg-7">
+                <!-- name profile -->
+                <div class="contents__name-profile">
+                    <h1 class="align-self-center">Thep Ho</h1>
+                </div>
+
+                <div id="home" class="cr__intro">
+                    <h2 class="cr__intro-slogan">Hello there 👋</h2>
+                    <p class="cr__intro-text">
+                        I 'm Thep. I 'm a full-stack web developer.
+                    </p>
+                    <div class="cr__intro-directer">
+                        <a href="#aboutme">
+                            <ion-icon name="chevron-down-outline" class="cr__intro-directer-icon"></ion-icon>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="aboutme" class="parent-contents row no-gutters mb-2">
+                    <div class="col-md-12">
+                        <h2 class="title-content">AboutMe</h2>
+                    </div>
+                    <div class="col-md-12 child-contents child-1">
+                        <p>
+                            I graduated from UET in 2022. Currently, I 'm working for a software development company in Ha Noi, Vietnam.
+                            I love reading books 📖 and very interested in bushcraft 🌳.
+                            I listen to music 🎧 while coding.
+                        </p>
+                    </div>
+                </div>
+                <div id="Skill" class="row no-gutters mb-2 parent-contents">
+                    <div class="col-md-12">
+                        <h2 class="title-content">Skill</h2>
+                    </div>
+                    <div class="col-md-4 child-contents child-2">
+                        <h5>Languages</h5>
+                        <p>C++</p>
+                        <p>C#</p>
+                        <p>Python</p>
+                        <p>Php</p>
+                        <p>Javascript</p>
+                    </div>
+                    <div class="col-md-4 child-contents child-2">
+                        <h5>Databases & FW</h5>
+                        <p>Mysql</p>
+                        <p>Vuejs</p>
+                        <p>Laravel</p>
+                        <p>Django</p>
+                    </div>
+                    <div class="col-md-4 child-contents child-2">
+                        <h5>Tools</h5>
+                        <p>Unity</p>
+                        <p><a href="https://github.com/thep200/git-notes" target="_blank">Git</a></p>
+                    </div>
+                </div>
+                <div id="exp" class="row no-gutters mb-2 parent-contents">
+                    <div class="col-md-12">
+                        <h2 class="title-content">Experience</h2>
+                    </div>
+                    <div class="col-md-12 child-contents child-3">
+                        <p>
+                            exp
+                        </p>
+                    </div>
+                </div>
+                <div id="contact" class="row no-gutters mb-2 parent-contents">
+                    <div class="col-md-12">
+                        <h2 class="title-content">Contact</h2>
+                    </div>
+
+                    <div class="col-md-12 row no-gutters child-contents child-4">
+                        <p>
+                            If you want to make a deal with me.
+                            Please drop me a line via this email or through LinkedIn.
+                        </p>
+                        <div class="col-md-12 row">
+                            <div class="col-1"><ion-icon name="mail"></ion-icon></div>
+                            <div class="col-9">Thep200.work@gmail.com</div>
+                        </div>
+                        <div class="col-md-12 row">
+                            <div class="col-1"><ion-icon name="logo-linkedin"></ion-icon></div>
+                            <div class="col-9"><a href="https://www.linkedin.com/in/thep200?time=100" target="_blank">Thep Ho</a></div>
+                        </div>
+                        <div class="col-md-12 row">
+                            <div class="col-1"><ion-icon name="logo-twitter"></ion-icon></div>
+                            <div class="col-9">...</div>
+                        </div>
+                        <div class="col-md-12 row">
+                            <div class="col-1"><ion-icon name="logo-skype"></ion-icon></div>
+                            <div class="col-9">...</div>
+                        </div>
+                        <div class="col-md-12 row">
+                            <div class="col-1"><ion-icon name="earth"></ion-icon></div>
+                            <div class="col-9"><a href="https://www.hackerrank.com/ThepHo" target="_blank">Hacker Rank</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="other" class="row no-gutters mb-2 parent-contents">
+                    <div class="col-md-12">
+                        <h2 class="title-content">Other</h2>
+                    </div>
+                    <p> See me on github here 👻 </p>
+                </div>
+
+                <!-- footer -->
+                <div class="footer">
+                    <p>@thep200 🤖</p>
+                </div>
+            </div>
+
+            <!-- floating navbar -->
+            <div class="float-nav">
+                <ion-icon class="float-nav__icon" name="reorder-four-outline"></ion-icon>
+                <div class="float-nav__list float-nav__list--offView">
+                    <a class="a__custom" href="#home">Ho</a>
+                    <a class="a__custom" href="#aboutme">Ab</a>
+                    <a class="a__custom" href="#contact">Ct</a>
+                    <a class="a__custom" href="#Skill">Sk</a>
+                    <a class="a__custom" href="#exp">Ex</a>
+                    <a class="a__custom" href="#other">Ot</a>
+                </div>
+
+                <script>
+                    document.getElementsByClassName("float-nav")[0].onmouseover = function() {
+                        document.getElementsByClassName("float-nav__list")[0].classList.remove("float-nav__list--offView");
+                        document.getElementsByClassName("float-nav__list")[0].classList.add("float-nav__list--onView");
+                    };
+
+                    document.getElementsByClassName("float-nav")[0].onmouseout = function() {
+                        document.getElementsByClassName("float-nav__list")[0].classList.add("float-nav__list--offView");
+                        document.getElementsByClassName("float-nav__list")[0].classList.remove("float-nav__list--onView");
+                    };
+
+                    let e = document.getElementsByClassName("a__custom");
+                    for (let i = 0; i < e.length; i++) {
+                        e[i].addEventListener('click', function() {
+                            document.getElementsByClassName("float-nav__list")[0].classList.add("float-nav__list--offView");
+                            document.getElementsByClassName("float-nav__list")[0].classList.remove("float-nav__list--onView");
+                        });
+                    }
+                </script>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
