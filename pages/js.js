@@ -12,17 +12,14 @@ function setBgColorNormalNav(isActive) {
 	}
 }
 
-
 function setTopNormalNav(top) {
 	document.getElementById("nav").style.top = top;
 }
-
 
 // Custom effect floating nav
 function customFloatNav() {
 	document.getElementsByClassName("float-nav__list")[0].style.display = "none";
 }
-
 
 function setPosFloatNav() {
 	var topPos = window.pageYOffset/100 + 30;
@@ -32,9 +29,8 @@ function setPosFloatNav() {
 	document.getElementsByClassName("float-nav")[0].style.top = topPos + "vh";
 }
 
-
 function turnOnFloatNav(isTurOn) {
-	// 
+	//
 	switch(isTurOn) {
 		case true:
 			document.getElementsByClassName("float-nav")[0].style.visibility = "visible";
@@ -47,15 +43,11 @@ function turnOnFloatNav(isTurOn) {
 	}
 }
 
-
-
 // wait for loading page
 setTimeout(function() {
 	document.getElementsByClassName("container-fluid")[0].classList.remove("container-fluid--custom");
 	document.getElementsByClassName("loading")[0].style.display = "none";
 }, 10);
-
-
 
 // On event scroll page
 // var prevScrollpos = window.pageYOffset;
@@ -91,7 +83,6 @@ window.onscroll = function() {
 	}
 	// prevScrollpos = currentScrollPos;
 }
-
 
 // On event resize window page
 window.onresize = function() {
