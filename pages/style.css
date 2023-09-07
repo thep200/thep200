@@ -16,7 +16,7 @@ body {
 #home {
   height: 100px;
   width: 100px;
-  background-color: aqua;
+  background-color: #c3ff00;
 }
 
 #school1 {
@@ -25,7 +25,7 @@ body {
   width: 100px;
   left: 50px;
   top: 150px;
-  background-color: aqua;
+  background-color: #c3ff00;
 }
 
 #school2 {

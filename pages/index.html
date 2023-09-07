@@ -15,7 +15,6 @@
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </head>
 
-
 <body>
     <main class="map">
         <div id="home">🏡 My home</div>
@@ -23,12 +22,35 @@
         <div id="universe">🏢 universe</div>
         <div id="hero">🙄</div>
         <script>
-            const home = document.getElementById('home');
+            const home = document.getElementById('school1');
+            // const home = document.getElementById('home');
             const hero = document.getElementById('hero');
+
+            const homeBounder = home.getBoundingClientRect();
+            const heroBounder = hero.getBoundingClientRect();
+
             document.addEventListener('click', (e) => {
-                console.log(hero.getBoundingClientRect());
-                hero.style.left = e.clientX + 'px';
-                hero.style.top = e.clientY + 'px';
+                const x_coor = e.clientX;
+                const y_coor = e.clientY;
+
+                console.log(homeBounder);
+                console.log('x: ', x_coor, 'y: ', y_coor);
+
+                hero.style.left = `${x_coor}px`;
+                hero.style.top = `${y_coor}px`;
+
+                if (
+                    x_coor < (homeBounder.x + homeBounder.left) && y_coor < (homeBounder.y + homeBounder.height)
+                    || x_coor > (homeBounder.x + homeBounder.left) && y_coor < (homeBounder.y + homeBounder.height)
+                    || x_coor > (homeBounder.x + homeBounder.left) && y_coor > (homeBounder.y + homeBounder.height)
+                    || x_coor < (homeBounder.x + homeBounder.left) && y_coor > (homeBounder.y + homeBounder.height)
+                ) {
+                    console.log('not overlap');
+                    home.style.background = '#ff0000'
+                } else {
+                    console.log('overlap');
+                    home.style.background = '#c3ff00'
+                }
             })
         </script>
     </main>
