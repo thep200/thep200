@@ -27,4 +27,7 @@ function whereIsHero(e, hero, places) {
             return;
         }
     }
+    Array.from(places).forEach((p) => {
+        p.style.background = '#c3ff00';
+    });
 }
