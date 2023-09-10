@@ -18,40 +18,18 @@
 <body>
     <main class="map">
         <div id="home">🏡 My home</div>
-        <div id="school1">🏤 school1</div>
+        <div id="school">🏤 school1</div>
         <div id="universe">🏢 universe</div>
         <div id="hero">🙄</div>
         <script>
-            const home = document.getElementById('school1');
-            // const home = document.getElementById('home');
-            const hero = document.getElementById('hero');
-
-            const homeBounder = home.getBoundingClientRect();
-            const heroBounder = hero.getBoundingClientRect();
-
             document.addEventListener('click', (e) => {
-                const x_coor = e.clientX;
-                const y_coor = e.clientY;
+                const hero = document.getElementById('hero');
+                const home = document.getElementById('home');
+                const school = document.getElementById('school');
+                const universe = document.getElementById('universe');
 
-                console.log(homeBounder);
-                console.log('x: ', x_coor, 'y: ', y_coor);
-
-                hero.style.left = `${x_coor}px`;
-                hero.style.top = `${y_coor}px`;
-
-                if (
-                    x_coor < (homeBounder.x + homeBounder.left) && y_coor < (homeBounder.y + homeBounder.height)
-                    || x_coor > (homeBounder.x + homeBounder.left) && y_coor < (homeBounder.y + homeBounder.height)
-                    || x_coor > (homeBounder.x + homeBounder.left) && y_coor > (homeBounder.y + homeBounder.height)
-                    || x_coor < (homeBounder.x + homeBounder.left) && y_coor > (homeBounder.y + homeBounder.height)
-                ) {
-                    console.log('not overlap');
-                    home.style.background = '#ff0000'
-                } else {
-                    console.log('overlap');
-                    home.style.background = '#c3ff00'
-                }
-            })
+                whereIsHero(e, hero, [home, school, universe]);
+            });
         </script>
     </main>
 </body>

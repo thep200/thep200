@@ -19,7 +19,7 @@ body {
   background-color: #c3ff00;
 }
 
-#school1 {
+#school {
   position: absolute;
   height: 100px;
   width: 100px;
@@ -28,26 +28,13 @@ body {
   background-color: #c3ff00;
 }
 
-#school2 {
-  position: absolute;
-  height: 100px;
-  width: 100px;
-  background-color: aqua;
-}
-
-#school3 {
-  height: 100px;
-  width: 100px;
-  background-color: aqua;
-}
-
 #universe {
   position: absolute;
   height: 100px;
   width: 100px;
   right: 200px;
   bottom: 200px;
-  background-color: aqua;
+  background-color: #c3ff00;
 }
 
 #hero {
