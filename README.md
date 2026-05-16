@@ -6,7 +6,7 @@
 - [Concurency In Go](https://cows-relax-h90.craft.me/7A2u77OKqaPYdH)
 - [Design Data-Intensive Applications](https://cows-relax-h90.craft.me/6Wxwr3cjoRAWn7)
 - [Clean Code](https://cows-relax-h90.craft.me/xUdxNQH1dbmgc0)
-- [Kafka The Definitive Guide]() `Incomming`
+- [Kafka The Definitive Guide](https://cows-relax-h90.craft.me/xfuiC46aDXc2y4)
 - [The Pragmatic Programmer]() `Incomming`
 - [The Go Programming Language]() `Incomming`
 - [Patterns of Enterprise Application Architecture]() `Incomming`
